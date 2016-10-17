@@ -13,5 +13,10 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	DEVICE_MAINTAINERS="5x (droidfivex)"
 
+# Boot animation
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1920
+-include vendor/aicp/configs/bootanimation.mk
+
 PRODUCT_DEVICE := kltekdi
 PRODUCT_NAME := aicp_kltekdi
